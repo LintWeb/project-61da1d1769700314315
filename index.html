@@ -3,9 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project-61da1d1769700314315</title>
+    <title>LogoHub - Professional Logo Templates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        #hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        #templates {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #templates h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .template-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .template-image {
+            height: 200px;
+            background: linear-gradient(45deg, #f39c12, #e74c3c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            position: relative;
+        }
+        .template-image::before {
+            content: attr(data-logo);
+        }
+        .template-info {
+            padding: 20px;
+        }
+        .template-info h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .template-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .template-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .tag {
+            background: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2rem;
+            }
+            #hero p {
+                font-size: 1rem;
+            }
+            nav ul {
+                display: none;
+            }
+            .template-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Blank white page -->
+    <header>
+        <nav>
+            <div class="logo">LogoHub</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Professional Logo Templates</h1>
+                <p>Discover thousands of professionally designed logo templates for your brand. From minimalist to bold, find the perfect logo to represent your business.</p>
+                <a href="#templates" class="btn">Browse Templates</a>
+            </div>
+        </section>
+
+        <section id="templates">
+            <h2>Featured Logo Templates</h2>
+            <div class="template-grid">
+                <div class="template-card">
+                    <div class="template-image" data-logo="LH"></div>
+                    <div class="template-info">
+                        <h3>Minimalist Monogram</h3>
+                        <p>Clean and professional design perfect for tech startups and consulting firms.</p>
+                        <div class="template-tags">
+                            <span class="tag">Minimal</span>
+                            <span class="tag">Modern</span>
+                            <span class="tag">Professional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-image" data-logo="BX"></div>
+                    <div class="template-info">
+                        <h3>Bold & Dynamic</h3>
+                        <p>Energetic design ideal for fitness centers and sports brands.</p>
+                        <div class="template-tags">
+                            <span class="tag">Bold</span>
+                            <span class="tag">Dynamic</span>
+                            <span class="tag">Sports</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-image" data-logo="EC"></div>
+                    <div class="template-info">
+                        <h3>Elegant Script</h3>
+                        <p>Sophisticated typography for fashion, beauty, and luxury brands.</p>
+                        <div class="template-tags">
+                            <span class="tag">Elegant</span>
+                            <span class="tag">Script</span>
+                            <span class="tag">Luxury</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-image" data-logo="GF"></div>
+                    <div class="template-info">
+                        <h3>Geometric Fusion</h3>
+                        <p>Abstract shapes and patterns for creative agencies and design studios.</p>
+                        <div class="template-tags">
+                            <span class="tag">Geometric</span>
+                            <span class="tag">Abstract</span>
+                            <span class="tag">Creative</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-image" data-logo="NV"></div>
+                    <div class="template-info">
+                        <h3>Nature Inspired</h3>
+                        <p>Organic shapes and natural elements for eco-friendly and wellness brands.</p>
+                        <div class="template-tags">
+                            <span class="tag">Nature</span>
+                            <span class="tag">Organic</span>
+                            <span class="tag">Wellness</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-image" data-logo="TR"></div>
+                    <div class="template-info">
+                        <h3>Tech Retro</h3>
+                        <p>Vintage-inspired design with a modern twist for tech companies.</p>
+                        <div class="template-tags">
+                            <span class="tag">Retro</span>
+                            <span class="tag">Tech</span>
+                            <span class="tag">Vintage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-image" data-logo="FL"></div>
+                    <div class="template-info">
+                        <h3>Food & Lifestyle</h3>
+                        <p>Appetizing colors and playful designs for restaurants and lifestyle brands.</p>
+                        <div class="template-tags">
+                            <span class="tag">Food</span>
+                            <span class="tag">Playful</span>
+                            <span class="tag">Lifestyle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-card">
+                    <div class="template-image" data-logo="HC"></div>
+                    <div class="template-info">
+                        <h3>Healthcare Hero</h3>
+                        <p>Trustworthy and caring design for medical and healthcare organizations.</p>
+                        <div class="template-tags">
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Trust</span>
+                            <span class="tag">Medical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 LogoHub. All rights reserved.</p>
+            <p>Thousands of professional logo templates for every business type.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
